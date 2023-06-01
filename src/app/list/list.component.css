@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: rgb(214, 214, 214);
+  }
+  
+  .item {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .item h3 {
+    margin-top: 0;
+  }
+  
+  .item p {
+    margin-bottom: 10px;
+  }
+  
+  .small-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .small-video {
+    max-width: 75%;
+    height: auto;
+  }
+  .title {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }

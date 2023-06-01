@@ -1,0 +1,15 @@
+<h1 class="title">Reddit Lab</h1>
+
+<div *ngIf="posts" class="container">
+    <div *ngFor="let item of posts.slice(0, 10)" class="item">
+      <h3>{{ item?.data?.title }}</h3>
+      <p><a href="{{ item?.data?.url }}" target="_blank">{{ item?.data?.url }}</a></p>
+      <img src="{{ item?.data?.url }}" alt="" class="small-image">
+      <div *ngIf="item?.data?.media?.reddit_video">
+        <video controls class="small-video">
+          <source [src]="item?.data?.media?.reddit_video?.fallback_url" type="video/mp4">
+          **Problem loading video**
+        </video>
+      </div>
+    </div>
+  </div>
